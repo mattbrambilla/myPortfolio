@@ -1,6 +1,6 @@
 /*
 
-TemplateMo 573 EduWell
+TemplateMo 573 EduWell (modified by Mattia Brambilla)
 
 https://templatemo.com/tm-573-eduwell
 
@@ -232,7 +232,7 @@ section {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #dc8cdb;
+  color: #8cacdc;
 }
 
 .section-heading p {
@@ -732,7 +732,7 @@ section.main-banner {
 
 .main-banner .header-text h2 em {
   font-style: normal;
-  color: #dc8cdb;
+  color: #8cacdc;
 }
 
 .main-banner .main-button-gradient {
@@ -788,7 +788,7 @@ services
 }
 
 .services .owl-dots .active {
-  background-color: #dc8cdb;
+  background-color: #8cacdc;
 }
 
 
