@@ -424,7 +424,8 @@ nav {
 }
 
 ul.main-nav {
-  padding-right: 20px;
+  padding-right: 120px;
+  margin-top: 5rem;
   display: flex;
   justify-content: flex-end;
   opacity: 0;
@@ -448,18 +449,8 @@ ul.main-nav.show-it {
   opacity: 1;
   visibility: visible;
   transition-delay: .25s;
+  padding: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Let's optimise it for mobile devices */
@@ -542,6 +533,17 @@ ul.main-nav.show-it {
   .footer {
     padding: 1em 0em;
   }
+
+  ul.main-nav {
+    padding-right: 50px;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    visibility: hidden;
+    transition: .25s all;
+  }
+
 }
 
 
