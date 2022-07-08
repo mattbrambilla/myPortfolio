@@ -462,6 +462,11 @@ margin-left: auto;
 display: block;
 }
 
+.projectDescription {
+  text-align: left; 
+  padding-bottom: 10px;
+}
+
 
 /* Let's optimise it for mobile devices */
 
