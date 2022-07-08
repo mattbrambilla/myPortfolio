@@ -452,6 +452,15 @@ ul.main-nav.show-it {
   padding: 1;
 }
 
+.profilepic {
+height: 300px;
+width: 300px;
+border: #6f7a7e1c 10px solid;
+border-radius: 100%;
+margin-left: 0px;
+flex: auto;
+}
+
 
 /* Let's optimise it for mobile devices */
 
