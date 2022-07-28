@@ -30,13 +30,8 @@ h6,
 }
 
 
-.sectiontitle {
-    font-weight: 200;
-    font-size: 40px;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    height: 100vh;
-    margin: 0 auto;
+.sectionTitle {
+    margin-top: 10px;
 }
 
 .titleproject {
@@ -164,11 +159,11 @@ ul {
     margin: auto;
     height: 100%;
     padding-bottom: 200px;
-    padding-top: 40pxpx
+    padding-top: 4rem;
 }
 
 .otsection {
-    padding-top: 2vh;
+    padding-top: 4rem;
     width: 100%;
     max-width: 1000px;
     margin: auto;
@@ -352,6 +347,24 @@ label {
         border-radius: 0%;
         border: #6f7a7e1c 10px solid
     }
+
+    .sectionalt {
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        height: 100%;
+        padding-bottom: 200px;
+        padding-top: 1rem;
+    }
+    
+    .otsection {
+        padding-top: 1rem;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        height: 100%
+    }
+
 }
 
 .imessage {
