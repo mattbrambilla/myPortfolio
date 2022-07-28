@@ -1,7 +1,7 @@
 .body {
     width: 100%;
-    height: 100vh;
-    margin: 0;
+    height: 100%;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -15,7 +15,8 @@ h1, h2 {
 
 h3,
 .font-weight-bold {
-  font-weight: 550 !important;
+  font-weight: 500 !important;
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue';
 }
 
 h4,
@@ -35,6 +36,7 @@ h6,
     padding-top: 5rem;
     padding-bottom: 5rem;
     height: 100vh;
+    margin: 0 auto;
 }
 
 .titleproject {
@@ -69,18 +71,16 @@ ul {
     height: auto;
     width: 100%;
     position: fixed;
-    z-index: 1030;
+    z-index: 1;
     height: 4rem;
 }
 
 .navbar a {
     float: left;
     color: #353535 !important;
-    text-align: center;
     padding: 8px 16px;
     text-decoration: none;
     font-size: 17px;
-    position: relative
 }
 
 .navbar a:hover {
