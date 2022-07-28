@@ -1,3 +1,35 @@
+/******* Mattia Brambilla's Porfolio Theme ********/
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #0BCEAF;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #ffffff;
+    --dark: #343a40;
+  }
+
 .body {
     width: 100%;
     height: 100%;
@@ -56,9 +88,32 @@ ul {
     padding-left: 0rem;
   }
 
+/* Color schema */
+
 .primary {
     background-color: #04aa6d
 }
+
+.purple {
+    background-color: #6f42c1;
+}
+
+.red {
+    background-color: #dc3545
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
 
 .navbar {
     background-color: #fafafae5;
@@ -214,6 +269,30 @@ label {
     margin-top: 2
 }
 
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    border-radius: 10px;
+  }
+  
+  .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transition: width 0.6s ease;
+  }
+
+/* Social CSS */
+
 .btn-social {
     border: 0;
     border-radius: 2.99rem;
@@ -282,7 +361,7 @@ label {
     text-align: center
 }
 
-
+/* Rule for smart devices */
 
 @media screen and (max-width:500px) {
     .profilepic {
@@ -483,64 +562,3 @@ p.from-them::after {
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem
 }
-
-@keyframes progress-bar-stripes {
-    from {
-      background-position: 1rem 0;
-    }
-    to {
-      background-position: 0 0;
-    }
-  }
-
-  
-  .progress .progress-bar {
-    width: 0px;
-    border-radius: 10px;
-    transition: 2s;
-  }
-
-.progress {
-  display: flex;
-  height: 1rem;
-  overflow: hidden;
-  line-height: 0;
-  font-size: 0.75rem;
-  background-color: #e9ecef;
-  border-radius: 0.25rem;
-  border-radius: 10px;
-}
-
-.progress-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  background-color: #0BCEAF;
-  transition: width 0.6s ease;
-}
-
-
-@media (prefers-reduced-motion: reduce) {
-    .progress-bar {
-      transition: none;
-    }
-  }
-  
-  .progress-bar-striped {
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 1rem 1rem;
-  }
-  
-  .progress-bar-animated {
-    animation: progress-bar-stripes 1s linear infinite;
-  }
-  
-  @media (prefers-reduced-motion: reduce) {
-    .progress-bar-animated {
-      animation: none;
-    }
-  }
