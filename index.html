@@ -15,6 +15,32 @@
   <!-- Template Javascript -->
 <script src="/js/main.js"></script>
 
+<!--Mail setting-->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('iiwNZJUVv3GiIsMeG');
+    })();
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('contact_service', 'contact_form', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
+
 </head>
 
 <body data-spy="scroll" data-target="#myNavbar" data-offset="50">
@@ -221,18 +247,18 @@
 
               <h2 class="mb-5">Restiamo in contatto. <br> E' semplice.</h2>
 
-              <form class="border-right pr-5 mb-5" method="post" id="contactForm" name="contactForm">
+              <form class="border-right pr-5 mb-5" method="post" id="contact-form" name="contact-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Nome">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Nome">
                   </div>
                   <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Cognome">
+                    <input type="text" class="form-control" name="surname" id="surname" placeholder="Cognome">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12 form-group">
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                    <input type="text" class="form-control" name="mail" id="mail" placeholder="Email">
                   </div>
                 </div>
 
