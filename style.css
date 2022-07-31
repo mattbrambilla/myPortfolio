@@ -196,6 +196,13 @@ ul {
     object-position: 53% 40%
 }
 
+.imageProfile {
+            width: 80%;
+            height: 80%;
+            border-radius: 6%;
+    }
+
+
 .form-control {
     margin-bottom: 10px;
 }
