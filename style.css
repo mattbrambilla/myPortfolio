@@ -171,11 +171,11 @@ ul {
 .zoomimg {
     height: 100%;
     width: 100%;
-    zoom: 55%;
+    zoom: 30%;
     object-fit: none;
-    border-radius: 100%;
-    border: #6f7a7e1c 10px solid;
-    object-position: 53% 40%
+    border: #888d8f1c 10px solid;
+    object-position: 53% 20%;
+    border-radius: 10%;
 }
 
 .imageProfile {
@@ -415,13 +415,6 @@ label {
         margin-bottom: 80px;
         position: relative;
         object-position: 10%
-    }
-
-    .zoomimg {
-        height: auto;
-        width: auto;
-        border-radius: 0%;
-        border: #6f7a7e1c 10px solid
     }
 
     .sectionalt {
