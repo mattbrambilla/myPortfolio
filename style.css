@@ -173,9 +173,8 @@ ul {
     width: 100%;
     zoom: 100%;
     object-fit: none;
-    border: #888d8f1c 10px solid;
     object-position: 53% 20%;
-    border-radius: 10%;
+    border-radius: 6%;
 }
 
 .imageProfile {
@@ -352,11 +351,15 @@ label {
 
 
 @media screen and (min-width:700px) {
-    .spaceTitle {
+    .skillTitle {
         margin-top: 18vh;
     }
 
+    .portfolioTitle {
+        margin-top: 12vh;
+    }
 }
+
 
 /* Rule for smart devices */
 
@@ -437,10 +440,7 @@ label {
     .zoomimg {
         height: 100%;
         width: 100%;
-        zoom: 100%;
         object-fit: none;
-        border: #888d8f1c 10px solid;
-        object-position: 53% 20%;
         border-radius: 10%;
     }
 
@@ -561,4 +561,9 @@ p.from-them::after {
 .card-img-top {
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem
+}
+
+    .portfolioTitle {
+        margin-top: 5vh;
+    }
 }
