@@ -438,12 +438,16 @@ label {
     }
 
     .zoomimg {
-        height: 50vh;
-        width: 50vh;
-        object-fit:scale-down;
-        margin-left: 6vh;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        left: 25%;
+        object-fit: cover;
         margin-bottom: 5vh;
     }
+}
 
 }
 
@@ -564,7 +568,7 @@ p.from-them::after {
     border-top-right-radius: 1.25rem
 }
 
-    .portfolioTitle {
-        margin-top: 5vh;
-    }
+.portfolioTitle {
+    margin-top: 5vh;
+}
 }
