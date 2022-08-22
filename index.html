@@ -9,7 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/95a9ac836e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  <script src="https://kit.fontawesome.com/95a9ac836e.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -31,7 +33,6 @@
   <nav class="navbar navbar-fixed-top" id="#myNavbar">
     <div class="container d-flex justify-content-center">
       <ul> <a href="#home" class="rounded-pill active">Home</a> </ul>
-      <ul> <a href="#bio" class="rounded-pill">Bio</a> </ul>
       <ul><a href="#skill" class="rounded-pill">Skill</a> </ul>
       <ul> <a href="#portfolio" class="text-dark rounded-pill">Portfolio</a> </ul>
       <ul> <a href="#contact" class="text-dark rounded-pill">Contatti</a> </ul>
@@ -44,18 +45,44 @@
         <img src="img/profilepic1.webp" class="profilepic" alt="Responsive" title="Immagine profilo">
       </div>
 
-      <h1 class="text-center" alt="Responsive" id="home"> Ciao👋🏻</h1>
-      <div class="imessage">
+      <h1 class="text-center titleMain" alt="Responsive" id="home"> Mattia Brambilla</h1>
+      <h4 class="subtitle">Front-End Developer</h4>
+      <h3 class="description">Piacere! Mi chiamo Mattia, ho 26 anni e sono un aspirante Front-End Developer.
+        Fin da piccolo sono cresciuto circondato dall'informatica e ho assistito all'evoluzione del web e alle
+        opportunità che ha generato. <br />
+        Mi sono interessato allo sviluppo web e ho deciso di di iscrivermi al corso FrontEnd di <a href="https://www.start2impact.it/"
+        title="start2impact">
+        StartToImpact </a>. <br/>
+      Tutt'ora sto studiando e nel frattempo creo progetti per mettere in pratica quanto appreso..</h3>
+      <!-- <div class="imessage">
         <p class="from-them">Mi presento, sono Mattia Brambilla un aspirante Front-End Developer.</p>
         <p class="from-me"> Mi piace sviluppare interfacce web e siti</p>
+      </div> -->
+
+      <div class="container">
+        <div class="container d-flex justify-content-center">
+          <a href="https://github.com/mattbrambilla" target="_blank"> <button type="button" class="btn-social github"
+              title="GitHub"><i class="fa-brands fa-github fa-xl"></i> </button> </a>
+          <a href="https://www.linkedin.com/in/brambillam/" target="_blank"> <button type="button"
+              class="btn-social linkedin" title="LinkedIn"><i class="fa-brands fa-linkedin fa-xl"></i> </button>
+          </a>
+          <a href="https://www.instagram.com/matt.brambilla/" target="_blank"> <button type="button"
+              class="btn-social instagram" title="Instagram"><i class="fa-brands fa-instagram fa-xl"></i>
+            </button> </a>
+          <a href="https://twitter.com/justMattDev" target="_blank"> <button type="button" class="btn-social twitter"
+              title="Twitter"><i class="fa-brands fa-twitter fa-xl"></i> </button>
+          </a>
+        </div>
       </div>
+
 
       <div class="d-flex justify-content-center">
         <a href="#portfolio" class="btn btn-primario spaceup">Vai al Portfolio</a>
       </div>
+      
   </section>
 
-  <section class="sectionalt" id="bio">
+  <!-- <section class="sectionalt" id="bio">
     <h2 class="mb-5 text-center"> Bio</h1>
   
       <div class="row">
@@ -98,7 +125,7 @@
             </div>
           </div>
           </div>
-  </section>
+  </section> -->
 
   <section class="sectionalt" id="skill">
     <h2 class="mb-5 text-center skillTitle" id="skill"> Skill</h1>
