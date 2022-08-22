@@ -12,7 +12,7 @@
   <p align="center">
     myPortfolio
     <br />
-    <a href=""/">View Demo</a>
+    <a href="https://mattbrambilla.github.io/myPortfolio/"/">View Demo</a>
     ·
     <a href="https://github.com/mattbrambilla/myPortfolio/issues">Report Bug</a>
     ·
