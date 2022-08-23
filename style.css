@@ -13,25 +13,35 @@ html {
   }
 
 .body {
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     position: relative;
 }
 
-
-h1, h2 {
-    font-weight: 200;
-    font-size: 80px;
-    color: rgb(87, 87, 87);
-    padding-bottom: 5vh;
-    font-family: 'Inter, Segoe UI', 'Open Sans', 'Helvetica Neue';
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Inter';
+    text-align: center;
 }
 
-h3,
-.font-weight-bold {
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #00000;
+    padding-bottom: 0px;
+    text-align: center;  
+}
+
+h2 {
+    font-weight: 600;  
+}
+
+h3
+ {
     font-weight: 500 !important;
-    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue';
+    font-size: 1.24rem;
+    font-family: Inter;
 }
 
 h4,
@@ -146,14 +156,6 @@ ul {
     margin-bottom: 3vh
 }
 
-.profilepic2 {
-    height: 300px;
-    width: 300px;
-    border: #6f7a7e1c 10px solid;
-    border-radius: 100%;
-    margin-left: 30px
-}
-
 .welcomemsg {
     font-weight: 200;
     font-size: 80px;
@@ -173,47 +175,28 @@ ul {
     margin-top: 2rem;
 }
 
-.zoomimg {
-    height: 90%;
-    width: 100%;
-    zoom: 100%;
-    object-fit: none;
-    object-position: 53% 20%;
-    border-radius: 6%;
-}
-
 .imageProfile {
     width: 80%;
     height: 80%;
     border-radius: 6%;
 }
 
-
 .form-control {
     margin-bottom: 10px;
-}
-
-.homesection {
-    padding-top: 2vh;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    height: 100%;
 }
 
 .sectionalt {
     width: 100%;
     max-width: 1000px;
     margin: auto;
-    height: 100%;
-    padding-bottom: 200px;
+    height: auto;
+    padding-bottom: 100px;
     padding-top: 4rem;
 }
 
 .otsection {
     padding-top: 4rem;
     width: 100%;
-    max-width: 1000px;
     margin: auto;
     height: 100%
 }
@@ -259,7 +242,9 @@ label {
     border: 0;
     border-radius: 2.99rem;
     padding: .5rem 1rem;
-    margin-top: 2
+    margin-top: 2;
+    margin-top: 20px;
+
 }
 
 .progress {
@@ -356,8 +341,9 @@ label {
 
 
 @media screen and (min-width:700px) {
-    .skillTitle {
-        margin-top: 11.5vh;
+
+    .allignTitle {
+        margin-top: 11.5vh;   
     }
 
     .portfolioTitle {
@@ -393,26 +379,11 @@ label {
         color: #2e2e2e
     }
 
-    .h1, h2 {
-        font-weight: 200;
-        font-size: 60px;
-        color: #2e2e2e;
-        padding-top: 10vh
-    }
-
     .titleproject {
         font-weight: 200;
         font-size: 40px;
         color: #2e2e2e;
         padding-top: 5rem
-    }
-
-    .bio {
-        padding-top: 2vh;
-        width: 100%;
-        max-width: 1000px;
-        margin: auto;
-        height: auto
     }
 
     .imgcontainer {
@@ -442,108 +413,10 @@ label {
         height: 100%
     }
 
-    .zoomimg {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-        border-radius: 50%;
-        left: 25%;
-        object-fit: cover;
-        margin-bottom: 5vh;
+    .allignTitle {
+        margin-top: 11.5vh;   
     }
-}
 
-}
-
-.imessage {
-    background-color: #fff;
-    border-radius: .25rem;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.25rem;
-    margin: 0 auto 1rem;
-    max-width: 60vh;
-    padding: .5rem 1rem
-}
-
-.imessage p {
-    border-radius: 1.15rem;
-    line-height: 1.25;
-    max-width: 100%;
-    padding: .5rem .875rem;
-    position: relative;
-    word-wrap: break-word
-}
-
-.imessage p::before, .imessage p::after {
-    bottom: -.1rem;
-    content: "";
-    height: 1rem;
-    position: absolute
-}
-
-p.from-me {
-    align-self: flex-end;
-    background-color: #4b4b4b;
-    color: #fff
-}
-
-p.from-me::before {
-    border-bottom-left-radius: .8rem .7rem;
-    border-right: 1rem solid #4b4b4b;
-    right: -.35rem;
-    transform: translate(0, -.1rem)
-}
-
-p.from-me::after {
-    background-color: #fff;
-    border-bottom-left-radius: .5rem;
-    right: -40px;
-    transform: translate(-30px, -2px);
-    width: 10px
-}
-
-p[class^="from-"] {
-    margin: .5rem 0;
-    width: fit-content
-}
-
-p.from-me~p.from-me {
-    margin: .25rem 0 0
-}
-
-p.from-me~p.from-me:not(:last-child) {
-    margin: .25rem 0 0
-}
-
-p.from-me~p.from-me:last-child {
-    margin-bottom: .5rem
-}
-
-p.from-them {
-    align-items: flex-start;
-    background-color: #e5e5ea;
-    color: #000
-}
-
-p.from-them:before {
-    border-bottom-right-radius: .8rem .7rem;
-    border-left: 1rem solid #e5e5ea;
-    left: -.35rem;
-    transform: translate(0, -.1rem)
-}
-
-p.from-them::after {
-    background-color: #fff;
-    border-bottom-right-radius: .5rem;
-    left: 20px;
-    transform: translate(-30px, -2px);
-    width: 10px
-}
-
-.biotext {
-    margin: 10px
 }
 
 .projecttxt {
@@ -564,10 +437,6 @@ p.from-them::after {
     margin: 7px
 }
 
-.spaceup {
-    margin-top: 20px
-}
-
 .card-img-top {
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem
@@ -577,22 +446,14 @@ p.from-them::after {
     margin-top: 5vh;
 }
 
-.titleMain {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 3rem;
-    text-align: center;
-    color: #000;
-    padding-bottom: 0px;
-}
-
 .subtitle {
     font-weight: 400 !important;
     text-align: center;
 }
 
 .description {
-    font-weight: 200 !important;
+    font-family: Inter;
+    font-weight: 300 !important;
     font-size: 1.25rem;
     text-align: center;
     margin-top: 1rem;
