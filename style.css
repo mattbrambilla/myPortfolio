@@ -13,11 +13,12 @@ html {
   }
 
 .body {
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     margin: 0 auto;
     position: relative;
 }
+
 
 h1, h2 {
     font-weight: 200;
@@ -197,7 +198,7 @@ ul {
     width: 100%;
     max-width: 1000px;
     margin: auto;
-    height: 100vh;
+    height: 100%;
 }
 
 .sectionalt {
@@ -356,7 +357,7 @@ label {
 
 @media screen and (min-width:700px) {
     .skillTitle {
-        margin-top: 18vh;
+        margin-top: 11.5vh;
     }
 
     .portfolioTitle {
@@ -595,4 +596,9 @@ p.from-them::after {
     font-size: 1.25rem;
     text-align: center;
     margin-top: 1rem;
+}
+
+.footer {
+    position: sticky;
+    margin-top: 14vh;
 }
