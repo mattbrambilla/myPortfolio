@@ -244,6 +244,7 @@ label {
     padding: .5rem 1rem;
     margin-top: 2;
     margin-top: 20px;
+    margin-bottom: 2rem;
 
 }
 
@@ -348,6 +349,11 @@ label {
 
     .portfolioTitle {
         margin-top: 12vh;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
 
@@ -457,10 +463,6 @@ label {
     font-size: 1.25rem;
     text-align: center;
     margin-top: 1rem;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
