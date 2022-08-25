@@ -17,6 +17,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("iiwNZJUVv3GiIsMeG");
+    })();
+  </script>
 </head>
 
 <body data-spy="scroll" data-target="#myNavbar" data-offset="50">
@@ -46,7 +51,7 @@
                   </div>
                     
                   <form class=" border-right pr-5 mb-5" method="post" id="contact-form" name="contact-form"
-                onsubmit="return console.log('hello')">
+                onsubmit="return console.log('Submit ok')">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" class="form-control" name="name" id="name" placeholder="Nome" required>
@@ -113,8 +118,6 @@
 
 <script>
 
-  emailjs.init("service_bqb625e");
-
   // Script per ottenere l'anno corrente e stamparlo nel footer
   document.getElementById("year").innerHTML = new Date().getFullYear();
 
@@ -123,7 +126,7 @@
     document.getElementById('contact-form').addEventListener('submit', function (event) {
       event.preventDefault();
       // these IDs from the previous steps
-      emailjs.sendForm('contact_service', 'contact_form', this)
+      emailjs.sendForm('service_bqb625e', 'template_msu8c2t', '#contact-form')
           .then(function () {
           console.log('SUCCESS!');
         }, function (error) {
