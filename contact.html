@@ -16,6 +16,7 @@
   <script src="https://kit.fontawesome.com/95a9ac836e.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#myNavbar" data-offset="50">
@@ -45,7 +46,7 @@
                   </div>
                     
                   <form class=" border-right pr-5 mb-5" method="post" id="contact-form" name="contact-form"
-                onsubmit="return validate()" action="">
+                onsubmit="return console.log('hello')">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" class="form-control" name="name" id="name" placeholder="Nome" required>
@@ -91,7 +92,7 @@
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <p class="copyright-text">Copyright &copy; <span id="year"></span> Tutti i diritti riservati
-            <a href="#">Mattia Brambilla</a>.
+            <a href="index.html">Mattia Brambilla</a>.
           </p>
         </div>
 
@@ -112,6 +113,8 @@
 
 <script>
 
+  emailjs.init("service_bqb625e");
+
   // Script per ottenere l'anno corrente e stamparlo nel footer
   document.getElementById("year").innerHTML = new Date().getFullYear();
 
@@ -121,7 +124,7 @@
       event.preventDefault();
       // these IDs from the previous steps
       emailjs.sendForm('contact_service', 'contact_form', this)
-        .then(function () {
+          .then(function () {
           console.log('SUCCESS!');
         }, function (error) {
           console.log('FAILED...', error);
