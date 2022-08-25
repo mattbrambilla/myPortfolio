@@ -354,7 +354,7 @@ label {
     }
 
     .portfolioTitle {
-        margin-top: 12vh;
+        margin-top: 10vh;
     }
     .footer {
         position:relative;
@@ -432,6 +432,10 @@ label {
         margin-top: 11.5vh;   
     }
 
+    .portfolioTitle {
+        margin-top: 11.5vh;   
+    }
+
 }
 
 .projecttxt {
@@ -457,10 +461,6 @@ label {
     border-top-right-radius: 1.25rem
 }
 
-.portfolioTitle {
-    margin-top: 5vh;
-}
-
 .subtitle {
     font-weight: 400 !important;
     text-align: center;
@@ -475,6 +475,8 @@ label {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
+
+/* Footer proprieties */
 
 .site-footer
 {
