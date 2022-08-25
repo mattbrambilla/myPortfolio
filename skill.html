@@ -18,9 +18,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body data-spy="scroll" data-target="#myNavbar" data-offset="50">
-
-
   <nav class="navbar navbar-fixed-top" id="#myNavbar">
     <div class="container d-flex justify-content-center">
       <ul> <a href="./index.html" class="rounded-pill active">Home</a> </ul>
@@ -147,19 +144,5 @@
 
   // Script per ottenere l'anno corrente e stamparlo nel footer
   document.getElementById("year").innerHTML = new Date().getFullYear();
-
-  //Script per mail
-  window.onload = function () {
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      // these IDs from the previous steps
-      emailjs.sendForm('contact_service', 'contact_form', this)
-        .then(function () {
-          console.log('SUCCESS!');
-        }, function (error) {
-          console.log('FAILED...', error);
-        });
-    });
-  }
 
 </script>

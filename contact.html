@@ -24,9 +24,6 @@
   </script>
 </head>
 
-<body data-spy="scroll" data-target="#myNavbar" data-offset="50">
-
-
   <nav class="navbar navbar-fixed-top" id="#myNavbar">
     <div class="container d-flex justify-content-center">
       <ul> <a href="./index.html" class="rounded-pill active">Home</a> </ul>
@@ -80,8 +77,8 @@
               </div>
               </form>
 
-              <!-- <div id="form-message-warning mt-4"></div>  -->
-              <!-- <div id="form-message-success">                  Il tuo messaggio è stato inviato, grazie!             </div> -->
+              <div id="form-message-warning" class="text-danger"></div> 
+              <div id="form-message-success" class="text-success"> </div>
 
             </div>
           </div>
@@ -129,8 +126,10 @@
       emailjs.sendForm('service_bqb625e', 'template_msu8c2t', '#contact-form')
           .then(function () {
           console.log('SUCCESS!');
+          document.getElementById("form-message-success").innerHTML = "Il tuo messaggio è stato inviato, grazie!";
         }, function (error) {
           console.log('FAILED...', error);
+          document.getElementById("form-message-warning").innerHTML = "Messaggio non inviato, riprova.";
         });
     });
   }
