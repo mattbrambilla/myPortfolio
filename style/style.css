@@ -92,7 +92,7 @@ ul {
 }
 
 .red {
-    background-color: #ae6665
+    background-color: #a74341
 }
 
 .lightYellow {
@@ -192,6 +192,17 @@ ul {
     height: auto;
     padding-bottom: 100px;
     padding-top: 4rem;
+}
+
+/* Ho creato questa sezione solamente per le pagine Contatti e Portfolio */
+
+.sectionNoUpMarg {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    height: auto;
+    padding-bottom: 100px;
+    padding-top: 1rem;
 }
 
 .otsection {
@@ -622,3 +633,42 @@ label {
     font-weight:600
   }
 }
+
+/* Alert per la mail */
+
+/* .alertMail {
+    width:50%;
+    margin:20px auto;
+    padding:30px;
+    position:relative;
+    border-radius:5px;
+    box-shadow:0 0 15px 5px #ccc;
+    color: white;
+}
+
+.close{
+    position:absolute;
+    width:30px;
+    height:30px;
+    opacity:0.5;
+    border-width:1px;
+    border-style:solid;
+    border-radius:50%;
+    right:15px;
+    top:25px;
+    text-align:center;
+    font-size:1.6em;
+    cursor:pointer;
+  }
+  @mixin alert($name,$bgColor){
+    $accentColor:darken($bgColor,50);
+    .#{$name}{
+      background-color:#{$bgColor};
+      border-left:5px solid $accentColor;
+      .close{
+        border-color:$accentColor;
+        color:$accentColor;
+      }
+    }
+  } */
+  

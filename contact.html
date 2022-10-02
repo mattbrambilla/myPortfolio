@@ -34,13 +34,14 @@
   </nav>
 
 
-  <section class="sectionalt" id="contact">
+  <section class="sectionNoUpMarg" id="contact">
     <div class="content">
 
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-10">
             <div class="row align-items-center">
+              
               <h1 class="portfolioTitle titleMain">Restiamo in contatto. <br> E' semplice.</h1>
               <h2>Parliamo del tuo prossimo progetto.</h2>
               <p class="description"">Sentiti libero di scrivermi, di propormi la tua idea di business o di progetto collaborativo.
@@ -69,7 +70,7 @@
                     placeholder="Scrivi il tuo messaggio" required></textarea>
                 </div>
               </div>
-              <div class="row">
+              <div class="row text-center">
                 <div class="col-md-12">
                   <input type="submit" value="Invia messaggio" class="btn btn-primario">
                   <span class="submitting"></span>
@@ -77,8 +78,13 @@
               </div>
               </form>
 
-              <div id="form-message-warning" class="text-danger"></div> 
-              <div id="form-message-success" class="text-success"> </div>
+              <div id="form-message-warning" class="text-danger">
+                <!-- <a class="close">&times;</a> -->
+              </div> 
+              <div id="form-message-success" class="text-primary">
+                <!-- <a class="close">&times;</a> -->
+              </div>
+
 
             </div>
           </div>
@@ -113,10 +119,10 @@
 
 </html>
 
-<script>
+<script src="./js/footerDate.js"></script>
 
-  // Script per ottenere l'anno corrente e stamparlo nel footer
-  document.getElementById("year").innerHTML = new Date().getFullYear();
+
+<script>
 
   //Script per mail
   window.onload = function () {
