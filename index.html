@@ -1,97 +1,51 @@
 <!DOCTYPE html>
 <html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mattia Brambilla</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95a9ac836e.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
 
-<head>
-  <meta charset='UTF-8' />
-  <title>Mattia Brambilla</title>
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link href="style/style.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/95a9ac836e.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+    <script>
+      fetch("partials/navbar.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("navbar-container").innerHTML = html;
+        });
+    </script>
 
-  <nav class="navbar navbar-fixed-top" id="#myNavbar">
-    <div class="container d-flex justify-content-center">
-      <ul> <a href="./index.html" class="rounded-pill active">Home</a> </ul>
-      <ul><a href="./skill.html" class="rounded-pill">Skill</a> </ul>
-      <ul> <a href="./portfolio.html" class="text-dark rounded-pill">Portfolio</a> </ul>
-      <ul> <a href="./contact.html" class="text-dark rounded-pill">Contatti</a> </ul>
-    </div>
-  </nav>
+    <!-- Hero Section -->
+    <section class="pt-32 text-center px-4">
+      <img src="img/profilepic1.webp" alt="Immagine profilo" class="w-40 h-40 rounded-full mx-auto mb-6 shadow-md">
+      <h1 class="text-4xl font-bold mb-2">Mattia Brambilla</h1>
+      <h4 class="text-lg text-gray-600 mb-4">System Administrator S2 - FrontEnd Dev Hobbiest</h4>
+      <p class="max-w-2xl mx-auto text-lg text-gray-700">
+        Piacere! Mi chiamo Mattia, ho 26 anni e sono un aspirante Front-End Developer. Fin da piccolo sono cresciuto
+        circondato dall'informatica e ho assistito all'evoluzione del web e alle opportunità che ha generato.<br>
+        Mi sono interessato allo sviluppo web e ho deciso di iscrivermi al corso FrontEnd di
+        <a href="https://www.start2impact.it/" class="text-blue-500 underline" target="_blank">StartToImpact</a>.<br>
+        Tutt'ora sto studiando e nel frattempo creo progetti per mettere in pratica quanto appreso.
+      </p>
 
-  <section class="homesection">
-    <div class="container">
-      <div class="d-flex justify-content-center">
-        <img src="img/profilepic1.webp" class="profilepic" alt="Responsive" title="Immagine profilo">
+      <!-- Social Buttons -->
+      <div class="flex justify-center space-x-6 mt-8">
+        <a href="https://github.com/mattbrambilla" target="_blank" title="GitHub" class="text-gray-700 hover:text-black">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/brambillam/" target="_blank" title="LinkedIn" class="text-blue-700 hover:text-blue-900">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/matt.brambilla/" target="_blank" title="Instagram" class="text-pink-500 hover:text-pink-700">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
       </div>
+    </section>
 
-      <!-- Introduction -->
-      <h1 class="text-center" alt="Responsive" id="home"> Mattia Brambilla</h1>
-      <h4 class="subtitle">System Administrator S2 - FrontEnd Dev Hobbiest</h4>
-      <h3 class="description">Piacere! Mi chiamo Mattia, ho 26 anni e sono un aspirante Front-End Developer.
-        Fin da piccolo sono cresciuto circondato dall'informatica e ho assistito all'evoluzione del web e alle
-        opportunità che ha generato. <br />
-        Mi sono interessato allo sviluppo web e ho deciso di di iscrivermi al corso FrontEnd di <a
-          href="https://www.start2impact.it/" title="start2impact">
-          StartToImpact </a>. <br />
-        Tutt'ora sto studiando e nel frattempo creo progetti per mettere in pratica quanto appreso.</h3>
-
-      <!-- Social section -->
-
-      <div class="container">
-        <div class="container d-flex justify-content-center">
-          <a href="https://github.com/mattbrambilla" target="_blank"> <button type="button" class="btn-social github"
-              title="GitHub"><i class="fa-brands fa-github fa-xl"></i> </button> </a>
-          <a href="https://www.linkedin.com/in/brambillam/" target="_blank"> <button type="button" class="btn-social linkedin"
-              title="LinkedIn"><i class="fa-brands fa-linkedin fa-xl"></i> </button>
-          </a>
-          <a href="https://www.instagram.com/matt.brambilla/" target="_blank"> <button type="button"
-              class="btn-social instagram" title="Instagram"><i class="fa-brands fa-instagram fa-xl"></i>
-            </button> </a>
-        </div>
-      </div>
-      <br />
-      
-      
-      <div class="d-flex justify-content-center">
-        <a href="./portfolio.html" class="btn btn-primario">Vai al Portfolio</a>
-      </div>
-      <div class="spaceSection"></div>
-      
-      </section>
-
-    <!-- Copyright -->
-
-    <footer>
-      <div class="text-center p-4 footer site-footer">
-        <div class=" container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; <span id="year"></span> Tutti i diritti riservati
-                <a href="index.html">Mattia Brambilla</a>.
-              </p>
-            </div>
-    
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
-                <li><a class="github" href="https://github.com/mattbrambilla/"><i class="fa fa-github"></i></a></li>
-                <li><a class="linkedin" href="https://www.linkedin.com/in/brambillam/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a class="instagram" href="https://www.instagram.com/matt.brambilla/"><i class="fa fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </footer>
-    </body>
-    
-    </html>
-    
-    <script src="./js/footerDate.js"></script>
+  </body>
+</html>
