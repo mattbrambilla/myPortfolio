@@ -613,6 +613,18 @@ label {
   }
 }
 
+#menu {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #menu.hidden {
+    display: none;
+  }
+  
+  #menu.md\\:flex {
+    display: flex;
+  }
+
 /* Alert per la mail */
 
 /* .alertMail {
