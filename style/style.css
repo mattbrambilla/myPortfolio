@@ -53,7 +53,6 @@ h6,
     font-weight: 400 !important;
 }
 
-
 .sectionTitle {
     margin-top: 10px;
 }
@@ -623,6 +622,16 @@ label {
   
   #menu.md\\:flex {
     display: flex;
+  }
+
+  .chip {
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .chip:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
 /* Alert per la mail */
