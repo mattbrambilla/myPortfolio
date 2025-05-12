@@ -46,6 +46,19 @@ h6,
     font-weight: 400 !important;
 }
 
+nav {
+  background-color: #ffffff; /* Sfondo bianco */
+  border-bottom: 1px solid #e5e7eb; /* Bordi grigi */
+}
+
+nav a {
+  color: #1f2937; /* Testo grigio scuro */
+}
+
+nav a:hover {
+  color: #2563eb; /* Testo blu al passaggio del mouse */
+}
+
 .sectionTitle {
     margin-top: 10px;
 }
