@@ -13,8 +13,7 @@ html {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Inter';
-    text-align: center;
+    font-family: Poppins;
 }
 
 
@@ -22,7 +21,6 @@ h1 {
     font-weight: 700;
     font-size: 3rem;
     padding-bottom: 0px;
-    text-align: center;  
 }
 
 h2 {
@@ -33,8 +31,7 @@ h3
  {
     font-weight: 500 !important;
     font-size: 1.24rem;
-    font-family: Inter;
-}
+  }
 
 h4,
 h5 .font-weight-medium {
@@ -97,6 +94,11 @@ ul {
     display: flex;
   }
 
+.socialButton {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
 
 /* Alert per la mail */
 
