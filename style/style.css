@@ -6,7 +6,7 @@ html {
   }
 
 .body {
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
     position: relative;
@@ -34,7 +34,8 @@ h3
   }
 
 h4,
-h5 .font-weight-medium {
+h5,
+.font-weight-medium {
     font-weight: 500 !important;
 }
 

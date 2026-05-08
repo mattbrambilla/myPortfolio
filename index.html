@@ -13,22 +13,14 @@
   <script src="./js/navbar.js" defer></script>
 </head>
 
-<body class="bg-white text-gray-900 font-sans">
+<body class="bg-white text-gray-900 font-sans flex flex-col min-h-screen">
 
-  <!-- Navbar -->
   <div id="navbar-container"></div>
-  <script>
-    fetch("partials/navbar.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("navbar-container").innerHTML = html;
-      });
-  </script>
 
   <!-- Hero Section -->
   <section class="pt-16 text-center px-4">
     <img src="img/profilepic1.webp" alt="Immagine profilo" class="w-40 h-40 rounded-full mx-auto mb-6 shadow-md">
-    <h class="text-5xl font-bold mb-2">Mattia Brambilla</h1>
+    <h1 class="text-5xl font-bold mb-2">Mattia Brambilla</h1>
       <!-- Chips -->
       <div class="flex justify-center space-x-4 mt-4">
         <span class="chip bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium">System Administrator</span>
@@ -36,10 +28,9 @@
         <span class="chip bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-medium">Wordpress
           Maintainer</span>
       </div>
-    </h>
     <p class="max-w-2xl mx-auto text-lg text-gray-700">
-      </br>
-      Piacere! Mi chiamo Mattia, ho 28 anni e sono un System Administrator. </br> Fin da piccolo sono cresciuto
+      <br>
+      Piacere! Mi chiamo Mattia, ho 28 anni e sono un System Administrator. <br> Fin da piccolo sono cresciuto
       circondato dall'informatica e ho assistito all'evoluzione del web e alle opportunità che ha generato.<br>
       Ora sfrutto queste opportunità per migliorare le mie competenze e aiutare le persone a trovare soluzioni ai loro
       problemi.
@@ -48,16 +39,25 @@
   </section>
 
   <!-- Social Buttons -->
-  <div class="flex justify-center space-x-6 mt-1">
-    <a href="https://github.com/mattbrambilla" target="_blank" title="GitHub" class="socialButton">
-      <i class="fab fa-github fa-2x"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/brambillam/" target="_blank" title="LinkedIn" class="socialButton">
-      <i class="fab fa-linkedin fa-2x"></i>
-    </a>
-  </div>
+  <section class="py-8 text-center">
+    <div class="flex justify-center space-x-6">
+      <a href="https://github.com/mattbrambilla" target="_blank" title="GitHub" class="socialButton">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/brambillam/" target="_blank" title="LinkedIn" class="socialButton">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+    </div>
   </section>
 
+  <div id="footer-container"></div>
+  <script>
+    fetch("partials/footer.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("footer-container").innerHTML = html;
+      });
+  </script>
 </body>
 
 </html>
