@@ -6,11 +6,6 @@
       <span class="self-center text-xl font-semibold whitespace-nowrap">Mattia Brambilla</span>
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button id="theme-toggle" type="button" class="theme-switch" aria-label="Toggle dark mode">
-        <i class="fas fa-moon"></i>
-        <span class="theme-switch-knob"></span>
-        <i class="fas fa-sun"></i>
-      </button>
       <a href="./contact.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 transition-colors duration-200">Contattami</a>
       <button data-collapse-toggle="navbar-menu" type="button" class="hamburger md:!hidden p-2 w-10 h-10 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-menu" aria-expanded="false">
         <span class="sr-only">Apri menu</span>
@@ -19,7 +14,7 @@
         <span class="bar"></span>
       </button>
     </div>
-    <div class="navbar-menu w-full md:flex md:w-auto md:order-1" id="navbar-menu">
+    <div class="navbar-menu w-full md:flex md:w-auto md:order-1 md:items-center" id="navbar-menu">
       <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:border-0 md:bg-transparent md:space-x-8 rtl:space-x-reverse">
         <li>
           <a href="./index.html" class="nav-link block py-2 px-3 md:px-4 md:py-2 text-gray-900">Chi Sono</a>
@@ -31,6 +26,13 @@
           <a href="./portfolio.html" class="nav-link block py-2 px-3 md:px-4 md:py-2 text-gray-900">Progetti</a>
         </li>
       </ul>
+      <div class="flex justify-center md:justify-start md:ml-6 py-2 md:py-0">
+        <button id="theme-toggle" type="button" class="theme-switch" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+          <span class="theme-switch-knob"></span>
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
     </div>
   </div>
 </nav>
