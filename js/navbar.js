@@ -65,5 +65,13 @@ fetch("partials/navbar.html")
         ticking = true;
       }
     });
+    // 4. Dark mode toggle
+    const themeToggle = document.getElementById("theme-toggle");
+    if (themeToggle) {
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.documentElement.classList.toggle("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+      });
+    }
   })
   .catch(err => console.error("Errore durante il caricamento della navbar:", err));
