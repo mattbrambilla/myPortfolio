@@ -311,3 +311,95 @@ html {
 .hamburger.open .bar:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
+
+/* ===== CHIPS ===== */
+.chip {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+  position: relative;
+}
+
+.chip:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+.chip-blue {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.25);
+  color: #2563eb;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+}
+
+.chip-blue:hover {
+  background: rgba(59, 130, 246, 0.18);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.25);
+}
+
+.chip-green {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.25);
+  color: #16a34a;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.15);
+}
+
+.chip-green:hover {
+  background: rgba(34, 197, 94, 0.18);
+  box-shadow: 0 4px 16px rgba(34, 197, 94, 0.25);
+}
+
+.chip-purple {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.25);
+  color: #9333ea;
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.15);
+}
+
+.chip-purple:hover {
+  background: rgba(168, 85, 247, 0.18);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.25);
+}
+
+/* Dark mode chips */
+.dark .chip-blue {
+  background: rgba(96, 165, 250, 0.12);
+  border-color: rgba(96, 165, 250, 0.2);
+  color: #93c5fd;
+  box-shadow: 0 2px 8px rgba(96, 165, 250, 0.1);
+}
+
+.dark .chip-blue:hover {
+  background: rgba(96, 165, 250, 0.2);
+  box-shadow: 0 4px 16px rgba(96, 165, 250, 0.2);
+}
+
+.dark .chip-green {
+  background: rgba(74, 222, 128, 0.12);
+  border-color: rgba(74, 222, 128, 0.2);
+  color: #86efac;
+  box-shadow: 0 2px 8px rgba(74, 222, 128, 0.1);
+}
+
+.dark .chip-green:hover {
+  background: rgba(74, 222, 128, 0.2);
+  box-shadow: 0 4px 16px rgba(74, 222, 128, 0.2);
+}
+
+.dark .chip-purple {
+  background: rgba(192, 132, 252, 0.12);
+  border-color: rgba(192, 132, 252, 0.2);
+  color: #d8b4fe;
+  box-shadow: 0 2px 8px rgba(192, 132, 252, 0.1);
+}
+
+.dark .chip-purple:hover {
+  background: rgba(192, 132, 252, 0.2);
+  box-shadow: 0 4px 16px rgba(192, 132, 252, 0.2);
+}
