@@ -31,7 +31,7 @@
       </div>
     <p class="max-w-2xl mx-auto text-lg text-gray-700">
       <br>
-      Piacere! Mi chiamo Mattia, ho 29 anni e sono un System Administrator. <br> Fin da piccolo sono cresciuto
+      Piacere! Mi chiamo Mattia, ho <span id="age"></span> anni e sono un System Administrator. <br> Fin da piccolo sono cresciuto
       circondato dall'informatica e ho assistito all'evoluzione del web e alle opportunità che ha generato.<br>
       Ora sfrutto queste opportunità per migliorare le mie competenze e aiutare le persone a trovare soluzioni ai loro
       problemi.
@@ -55,6 +55,9 @@
   </section>
 
   <div id="footer-container"></div>
+  <script>
+    document.getElementById("age").textContent = new Date().getFullYear() - 1996;
+  </script>
   <script>
     fetch("partials/footer.html")
       .then(res => res.text())

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Mattia Brambilla - Certificazioni</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <script>if(localStorage.getItem('theme')==='dark'||(!localStorage.getItem('theme')&&window.matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark')</script>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/95a9ac836e.js" crossorigin="anonymous"></script>
+  <link href="./style/style.css" rel="stylesheet">
+  <script src="./js/navbar.js" defer></script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans flex flex-col min-h-screen">
+  <div id="navbar-container"></div>
+
+  <!-- Hero Section -->
+  <section class="pt-16 bg-white shadow-md">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold text-gray-800">Certificazioni</h1>
+      <p class="mt-4 text-lg text-gray-600">Certificazioni e corsi completati.</p>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="py-12 flex-grow">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+      <!-- Certification 1 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <i class="fab fa-microsoft text-3xl text-blue-600 mr-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800">Microsoft 365 Certified: Fundamentals</h3>
+          </div>
+          <p class="text-gray-500 text-sm">Microsoft</p>
+          <p class="text-gray-600 mt-2">Rilasciata: Maggio 2024</p>
+          <p class="text-gray-500 text-xs mt-1">ID Credenziale: 7749C948FED569C2</p>
+        </div>
+      </div>
+
+      <!-- Certification 2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-code text-3xl text-green-500 mr-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800">HTML Fundamental Course</h3>
+          </div>
+          <p class="text-gray-500 text-sm">SoloLearn</p>
+          <p class="text-gray-600 mt-2">Rilasciata: Maggio 2020</p>
+          <p class="text-gray-500 text-xs mt-1">ID Credenziale: 1014-2450204</p>
+        </div>
+      </div>
+
+      <!-- Certification 3 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <i class="fab fa-google text-3xl text-yellow-500 mr-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800">Fondamenti del Marketing Digitale</h3>
+          </div>
+          <p class="text-gray-500 text-sm">Google Digital Training</p>
+          <p class="text-gray-600 mt-2">Rilasciata: Agosto 2019</p>
+          <p class="text-gray-500 text-xs mt-1">ID Credenziale: PNX 4L5 NNS</p>
+        </div>
+      </div>
+
+      <!-- Certification 4 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <i class="fab fa-microsoft text-3xl text-blue-600 mr-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800">MTA 98-349: Windows Operating System Fundamentals</h3>
+          </div>
+          <p class="text-gray-500 text-sm">Microsoft</p>
+          <p class="text-gray-500 text-xs mt-1">ID Credenziale: 16415587</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch("partials/footer.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("footer-container").innerHTML = html;
+      });
+  </script>
+</body>
+
+</html>
